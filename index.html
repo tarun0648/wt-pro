@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Spotify Visualizer</h1>
+        </header>
+        <main>
+            <div class="visualizer">
+                <canvas id="waveformCanvas"></canvas>
+            </div>
+            <aside class="menu">
+                <div>
+                    <label>Background Color</label>
+                    <input type="color" id="bgColorPicker">
+                </div>
+                <div>
+                    <label>Album Information</label>
+                    <div id="albumInfo">
+                        <img id="albumCover" src="" alt="Album Cover">
+                        <p id="trackTitle">Track Title</p>
+                        <p id="artistName">Artist Name</p>
+                        <p id="bpmKey">BPM: -- | Key: --</p>
+                    </div>
+                </div>
+                <div>
+                    <label>User Information</label>
+                    <p id="userInfo">Loading...</p>
+                </div>
+                <div>
+                    <label>Lyrics</label>
+                    <p id="lyrics">Lyrics will appear here...</p>
+                </div>
+            </aside>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
